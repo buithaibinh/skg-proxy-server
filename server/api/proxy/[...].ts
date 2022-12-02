@@ -12,6 +12,7 @@ export default defineEventHandler(async (event) => {
 
   // proxy route
   const proxyRes = await fetch(url, {
+    // proxy request headers
   });
   const body = await proxyRes.text();
   res.end(body);
