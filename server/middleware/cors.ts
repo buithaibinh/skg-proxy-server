@@ -15,6 +15,7 @@ export default defineEventHandler((event) => {
   );
   console.log('cors', req.method);
   if (req.method === 'OPTIONS') {
+    console.log('cors', 'options');
     res.statusCode = 204;
     res.statusMessage = 'No Content.';
     return 'OK';
