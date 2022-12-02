@@ -20,9 +20,10 @@ export default defineEventHandler(async (event) => {
   });
 
   const headers: any = { ...req.headers };
+
   const proxyRes = await fetch(finalUrl, {
     method: req.method,
-    headers
+    // headers
   });
   const body = await proxyRes.text();
   res.end(body);
