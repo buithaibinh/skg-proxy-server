@@ -41,7 +41,7 @@ export default defineEventHandler(async (event) => {
   });
 
   // set cors policy
-  setCORSPolicy(res);
+  // setCORSPolicy(res);
 
   const body = await proxyRes.text();
   res.end(body);
