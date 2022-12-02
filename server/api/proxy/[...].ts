@@ -27,7 +27,4 @@ export default defineEventHandler(async (event) => {
   });
   const body = await proxyRes.text();
   res.end(body);
-
-  // res.writeHead(302, { Location: url });
-  // res.end();
 });
